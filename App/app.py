@@ -26,4 +26,7 @@ pageSoup = pageSoup.find('div', {'class': 'row'})
 # pageSoup = pageSoup.find(
 #     'div', {'class': 'col-lg-9 col-md-9 col-sm-8 col-fix-main'})
 
+# test code
+
+
 print(pageSoup)
