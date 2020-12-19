@@ -15,8 +15,11 @@ pageSoup = pageSoup.find('form', {'id': 'aspnetForm'})
 pageSoup = pageSoup.find('div', {'id': 'ns-wrapper'})
 pageSoup = pageSoup.find('div', {'id': 'ns-content'})
 pageSoup = pageSoup.find('div', {'class': 'full-content catPage'})
-pageSoup = pageSoup.find('div', {'class': 'container'})
-pageSoup = pageSoup.find('div', {'class': 'row'})
+pageSoup = pageSoup.findAll('div', {'class': 'container'})
+for pageSoup in pageSoup:
+    pageSoup = pageSoup.find('div', {'class': 'row'})
+    print(len(pageSoup))
+    print("\n ############################################## \n")
 # pageSoup = pageSoup.find('div', {'class': 'inner-content-box inner'})
 # pageSoup = pageSoup.div
 # pageSoup = pageSoup.find('div', {'id': 'angularApp'})
@@ -25,5 +28,3 @@ pageSoup = pageSoup.find('div', {'class': 'row'})
 # pageSoup = pageSoup.find('div', {'class': 'row'})
 # pageSoup = pageSoup.find(
 #     'div', {'class': 'col-lg-9 col-md-9 col-sm-8 col-fix-main'})
-
-print(pageSoup)
