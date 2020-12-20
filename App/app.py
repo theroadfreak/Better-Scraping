@@ -15,16 +15,20 @@ pageSoup = pageSoup.find('form', {'id': 'aspnetForm'})
 pageSoup = pageSoup.find('div', {'id': 'ns-wrapper'})
 pageSoup = pageSoup.find('div', {'id': 'ns-content'})
 pageSoup = pageSoup.find('div', {'class': 'full-content catPage'})
-pageSoup = pageSoup.findAll('div', {'class': 'container'})
-for pageSoup in pageSoup:
-    pageSoup = pageSoup.find('div', {'class': 'row'})
-    print(len(pageSoup))
-    print("\n ############################################## \n")
-# pageSoup = pageSoup.find('div', {'class': 'inner-content-box inner'})
-# pageSoup = pageSoup.div
-# pageSoup = pageSoup.find('div', {'id': 'angularApp'})
+pageSoup = pageSoup.findAll('div', {'class': 'container'})  # 2
+pageSoup = pageSoup[1].find('div', {'class': 'row'})
+# 1cont : 1row, 2cont : 1row
+pageSoup = pageSoup.find('div', {'class': 'inner-content-box inner'})
+# 1cont : 1row : 0 , 2cont : 1row : 1inner
+pageSoup = pageSoup.div
+pageSoup = pageSoup.findAll('div', {'id': 'angularApp'})
+# 1cont : 1row : 0 , 2cont : 1row : 1inner : 1 angularApp
+print(pageSoup)
 # pageSoup = pageSoup.find('div', {'class': 'ng-scope'})
 # pageSoup = pageSoup.find('div', {'id': 'mainContainer'})
 # pageSoup = pageSoup.find('div', {'class': 'row'})
 # pageSoup = pageSoup.find(
 #     'div', {'class': 'col-lg-9 col-md-9 col-sm-8 col-fix-main'})
+
+
+# PhantomJS https://phantomjs.org/quick-start.html
