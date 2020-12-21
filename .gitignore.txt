@@ -8,6 +8,7 @@ __pycache__/
 #Custom
 BeterScrape/
 BeterScrapeLaptop/
+geckodriver.log
 # Distribution / packaging
 .Python
 build/
