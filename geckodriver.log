@@ -1,7 +1,0 @@
-1608539766471	geckodriver	INFO	Listening on 127.0.0.1:60622
-1608539769534	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\dusha\\AppData\\Local\\Temp\\rust_mozprofileY3R1AA"
-*** You are running in headless mode.
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-1608539771193	Marionette	INFO	Listening on port 60631
-1608539771577	Marionette	WARN	TLS certificate errors will be ignored for this session
-1608539774473	Marionette	INFO	Stopped listening on port 60631
